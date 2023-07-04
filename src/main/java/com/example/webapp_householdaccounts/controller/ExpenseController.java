@@ -26,7 +26,7 @@ public class ExpenseController {
     @GetMapping(value = "/expense/list")
     public String displayList(Model model) {
         List<Expense> expenseList = expenseService.searchAll();
-        model.addAttribute("expenselist", expenseList);
+        model.addAttribute("expenseList", expenseList);
         return "expense/list";
     }
 
