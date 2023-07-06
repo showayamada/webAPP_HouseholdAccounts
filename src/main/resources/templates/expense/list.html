@@ -24,14 +24,14 @@
         </thead>
         <tbody>
         <tr th:each="expense : ${expenseList}" th:object="${expense}" class="align-middle">
-            <td th:text="*{expense.id}"></td>
-            <td th:text="*{expense.name}"></td>
-            <td th:text="*{expense.price}"></td>
-            <td th:text="*{expense.category}"></td>
+            <td th:text="*{id}"></td>
+            <td th:text="*{name}"></td>
+            <td th:text="*{price}"></td>
+            <td th:text="*{category}"></td>
             <td th:text="${#dates.format(expense.updateDate, 'yyyy/MM/dd')}"></td>
             <td th:text="${#dates.format(expense.createDate, 'yyyy/MM/dd')}"></td>
             <td th:text="${#dates.format(expense.deleteDate, 'yyyy/MM/dd')}"></td>
-            <td><a th:href="@{/expense/{id}(id=*{expense.id})}" class="btn btn-secondary">詳細</a></td>
+            <td><a th:href="@{/expense/{id}(id=*{id})}" class="btn btn-secondary">詳細</a></td>
         </tr>
         </tbody>
     </table>
