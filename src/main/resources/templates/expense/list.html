@@ -34,6 +34,7 @@
             <td th:text="${#dates.format(expense.deleteDate, 'yyyy/MM/dd')}"></td>
             <td th:text="*{checked}"></td>
             <td><a th:href="@{/expense/{id}(id=*{id})}" class="btn btn-secondary">詳細</a></td>
+            <a th:href="@{/expense/categorize}" class="btn btn-outline-success">Categorize</a>
         </tr>
         </tbody>
     </table>
