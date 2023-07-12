@@ -28,9 +28,11 @@
             <td th:text="*{name}"></td>
             <td th:text="*{price}"></td>
             <td th:text="*{category}"></td>
+            <td th:text="*{registered}"></td>
             <td th:text="${#dates.format(expense.updateDate, 'yyyy/MM/dd')}"></td>
             <td th:text="${#dates.format(expense.createDate, 'yyyy/MM/dd')}"></td>
             <td th:text="${#dates.format(expense.deleteDate, 'yyyy/MM/dd')}"></td>
+            <td th:text="*{checked}"></td>
             <td><a th:href="@{/expense/{id}(id=*{id})}" class="btn btn-secondary">詳細</a></td>
         </tr>
         </tbody>
