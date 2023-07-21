@@ -18,16 +18,57 @@
 
 # Features
 
-#### version
+This application include the following main features : 
+
+* Recording of Expenses:
+
+Users can record detailed information about their expneses, includeing the amount, gategory, and data.
+
+* Register of Expense by photo
+
+User can upload "png" files. An integer obtained from the image by the Amazon Rekognition "Detecting text" is stored in the database as a price.
+
+※Using hogehogeAPI 
+
+
+#### Detail
 
 java 17
-spring framework boot 3.1
 
+spring framework boot 3.1.1
 
+java presistence api 3.1.0
 
-# Requirement
+lombok 1.18.20
 
-Environments under Google Colaboratory is tested.
+h2 database
+
+# Use
+
+Environments under IntelliJ IDEA is tested.
 
 # Future Update
+
+I want to add some fanctionalities.
+
+* Aggregation and Analysis by Categories :
+
+Expenses can be aggregated and analyzed based on different categories, and presented in graphs and tables.
+
+        
+
+* Multi-User Support :
+
+The system supports multiple users, allowing each user to create their own accounts and manage their household finaces independently.
+
+
+* Improve Function of Register of Expense by photo :
+
+Function of Register of expense by photo improve by using Google Vision API.
+
+* Auto Categrize :
+
+I want to add a categorizeNN "" function to the hogehogeAPI and use that API.
+
+
 
