@@ -9,4 +9,8 @@ import com.example.webapp_householdaccounts.entity.Expense;
  */
 @Repository
 public interface ExpenseRepository extends JpaRepository<Expense, Long>{
+
+    // findByIdメソッドを定義
+    Expense findById(long id);
+
 }

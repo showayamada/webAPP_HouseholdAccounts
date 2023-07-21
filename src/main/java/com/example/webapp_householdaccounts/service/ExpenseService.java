@@ -44,7 +44,7 @@ public class ExpenseService {
 
     /**
      * 支出情報　新規登録
-     *
+     * manual register
      */
     // データベースに画面からの入力データを登録する
 //    public void create (ExpenseRequest expenseRequest) {
@@ -59,25 +59,9 @@ public class ExpenseService {
 //        expenseRepository.save(expense);
 //    }
 
-    // 写真からの登録
-    public void createPrice (Resource resource) {
 
-        RecognitionResponse response = api.Recognition(resource);
-        int price = response.getPrice();
 
-        System.out.println(price);
-        Date now = new Date();
-        Expense expense = new Expense();
-        expense.setId(100);
-        expense.setName("test");
-        expense.setPrice(price);
-        expense.setCategory("test");
-        expense.setCreateDate(now);
-        expense.setUpdateDate(now);
-        expenseRepository.save(expense);
-
-    }
-
+    // 画像で登録
     public int insert(Resource resource) {
         RecognitionResponse response = api.Recognition(resource);
         int price = response.getPrice();
@@ -85,6 +69,14 @@ public class ExpenseService {
         String sql = "insert into expense VALUES(?,?,?,?,?,?,?,?,?)";
         int n = jdbcTemplate.update(sql, 1,"test",price,"test","test",now,now,null, false);
         return n;
+    }
+
+    /**
+     * 支出情報　主キー検索
+     * @return 検索結果
+     */
+    public Expense findById (Long id) {
+        return expenseRepository.findById(id).orElse(null);
     }
 
 }

@@ -63,6 +63,9 @@ public class ExpenseController {
     }
 
 
+    /**
+     * 支出の新規登録
+     */
     @PostMapping(value = "/upload", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public String upload(@RequestPart("file") MultipartFile file) throws IOException {
 
@@ -86,32 +89,6 @@ public class ExpenseController {
     }
 
 
-//    /**
-//     * 支出新規登録
-//     * @param expenseRequest リクエストデータ
-//     * @param model Model
-//     * @return 支出情報一覧画面
-//     */
-//    @RequestMapping(value = "/expense/create", method = RequestMethod.POST)
-//    public String create(@Validated @ModelAttribute ExpenseRequest expenseRequest, BindingResult result, Model model) {
-//
-//        //入力エラー
-//        if (result.hasErrors()){
-//            List<String> errorList = new ArrayList<String>();
-//            for (ObjectError error : result.getAllErrors()){
-//                errorList.add(error.getDefaultMessage());
-//            }
-//            model.addAttribute("validationError", errorList);
-//            model.addAttribute("expenseRequest", expenseRequest);
-//            return "expense/register";
-//        }
-//
-//        // 登録
-//        expenseService.create(expenseRequest);
-//        return "redirect:/expense/list";
-
-//    }
-
     /**
      * 支出詳細画面（仮）を表示
      * @param id 表示する支出ID
@@ -120,6 +97,8 @@ public class ExpenseController {
      */
     @GetMapping("/expense/{id}")
     public String displayView(@PathVariable Long id, Model model) {
+        Expense expense = expenseService.findById(id);
+        model.addAttribute("expenseData", expense);
         return "expense/view";
     }
 
