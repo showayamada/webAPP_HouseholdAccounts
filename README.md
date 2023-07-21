@@ -16,15 +16,15 @@
 <img width="581" alt="image" src="https://github.com/showayamada/webAPP_HouseholdAccounts/assets/108875785/442cf5bb-c2ef-4f83-ade2-c7356d90f345">
 
 
-# Features
+# Description
 
 This application include the following main features : 
 
-* Recording of Expenses:
+* _Recording of Expenses:_
 
 Users can record detailed information about their expneses, includeing the amount, gategory, and data.
 
-* Register of Expense by photo
+* _Register of Expense by photo:_
 
 User can upload "png" files. An integer obtained from the image by the Amazon Rekognition "Detecting text" is stored in the database as a price.
 
@@ -43,7 +43,7 @@ lombok 1.18.20
 
 h2 database
 
-# Use
+# Requirement
 
 Environments under IntelliJ IDEA is tested.
 
@@ -51,22 +51,22 @@ Environments under IntelliJ IDEA is tested.
 
 I want to add some fanctionalities.
 
-* Aggregation and Analysis by Categories :
+* _Aggregation and Analysis by Categories :_
 
 Expenses can be aggregated and analyzed based on different categories, and presented in graphs and tables.
 
         
 
-* Multi-User Support :
+* _Multi-User Support :_
 
 The system supports multiple users, allowing each user to create their own accounts and manage their household finaces independently.
 
 
-* Improve Function of Register of Expense by photo :
+* _Improve Function of Register of Expense by photo :_
 
 Function of Register of expense by photo improve by using Google Vision API.
 
-* Auto Categrize :
+* _Auto Categrize :_
 
 I want to add a categorizeNN "" function to the hogehogeAPI and use that API.
 
