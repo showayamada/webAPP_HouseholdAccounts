@@ -20,15 +20,15 @@
 
 This application include the following main features : 
 
-* _Recording of Expenses:_
+* __Recording of Expenses:__
 
 Users can record detailed information about their expneses, includeing the amount, gategory, and data.
 
-* _Register of Expense by photo:_
+* __Register of Expense by photo:__
 
 User can upload "png" files. An integer obtained from the image by the Amazon Rekognition "Detecting text" is stored in the database as a price.
 
-※Using hogehogeAPI 
+※Using EC2_Multifunctional_API (url)
 
 
 #### Detail
@@ -51,24 +51,24 @@ Environments under IntelliJ IDEA is tested.
 
 I want to add some fanctionalities.
 
-* _Aggregation and Analysis by Categories :_
+* __Aggregation and Analysis by Categories :__
 
 Expenses can be aggregated and analyzed based on different categories, and presented in graphs and tables.
 
         
 
-* _Multi-User Support :_
+* __Multi-User Support :__
 
 The system supports multiple users, allowing each user to create their own accounts and manage their household finaces independently.
 
 
-* _Improve Function of Register of Expense by photo :_
+* __Improve Function of Register of Expense by photo :__
 
 Function of Register of expense by photo improve by using Google Vision API.
 
-* _Auto Categrize :_
+* __Auto Categrize :__
 
-I want to add a categorizeNN "" function to the hogehogeAPI and use that API.
+I want to add a [categorizeAI](https://github.com/showayamada/CategorizeAI) "Category Classfier" function to the EC2_Multifunctional_API and use that API.
 
 
 
