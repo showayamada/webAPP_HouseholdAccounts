@@ -18,6 +18,16 @@
 
 # Features
 
+#### version
+
+java 17
+spring framework boot 3.1
+
+
+
 # Requirement
 
+Environments under Google Colaboratory is tested.
+
 # Future Update
+
