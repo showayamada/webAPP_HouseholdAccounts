@@ -28,7 +28,7 @@ Users can record detailed information about their expneses, includeing the amoun
 
 User can upload "png" files. An integer obtained from the image by the Amazon Rekognition "Detecting text" is stored in the database as a price.
 
-※Using EC2_Multifunctional_API (url)
+※Using [EC2_Multifunctional_API](https://github.com/showayamada/EC2_Multifunctional_API)
 
 
 #### Detail
