@@ -68,7 +68,7 @@ Function of Register of expense by photo improve by using Google Vision API.
 
 * __Auto Categrize :__
 
-I want to add a [categorizeAI](https://github.com/showayamada/CategorizeAI) "Category Classfier" function to the EC2_Multifunctional_API and use that API.
+I want to add a [categorizeAI](https://github.com/showayamada/CategorizeAI) that I produced "Category Classfier" function to the EC2_Multifunctional_API and use that API.
 
 
 
